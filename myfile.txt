@@ -1,1 +1,7 @@
 first line
+second line, git commit --amend
+
+git status                      : shows status of the repo
+git add myfile.txt              : stages the file
+git commit myfile.txt           : commits file
+git commit --amend myfile.txt   : commits file, but doesn't make a new commit.
