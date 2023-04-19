@@ -10,5 +10,5 @@ git restore --staged myfile.txt : removes file from staged
 git restore myfile.txt          : overwrites the working file with the staged file.
                                 : undos the changes if no staged file
     (there are two files: one you can edit, the working file. two the staged file.)
-
- 
+git add .                       : stages all unstaged changes
+git commit -m "myCommitMsg"     : commits, -m for message
