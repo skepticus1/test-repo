@@ -8,6 +8,7 @@ git commit --amend myfile.txt   : commits file, but doesn't make a new commit.
 git log                         : shows the repo's commit log
 git restore --staged myfile.txt : removes file from staged
 git restore myfile.txt          : overwrites the working file with the staged file.
+                                : undos the changes if no staged file
     (there are two files: one you can edit, the working file. two the staged file.)
 
  
