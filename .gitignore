@@ -1,3 +1,7 @@
 # ignore list
 
+# ignore logs folder
 logs
+
+# ignore all .exe files
+*.exe
