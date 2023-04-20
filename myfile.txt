@@ -14,3 +14,6 @@ git restore myfile.txt          : overwrites the working file with the staged fi
 git add .                       : stages all unstaged changes
 git commit -m "myCommitMsg"     : commits, -m for message
 git rm filename.file            : removes the files from the working directory
+git add -u                      : like git add . , but doesn't stage new files
+git commit -a                   : like git add -u , doesn't stage new files
+
