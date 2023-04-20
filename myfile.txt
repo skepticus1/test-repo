@@ -17,5 +17,9 @@ git rm filename.file            : removes the files from the working directory
 git add -u                      : like git add . , but doesn't stage new files
 git commit -a                   : like git add -u , doesn't stage new files
 git revert "commitIDhash        : undos the commit and leaves a recorded in the git log
-git reset HEAD~                 : undos the undo. will bring back Item.h
+git reset HEAD~                 : undos the commit no log. can undo the undo from revert.
     (git restore Item.h will need to be entered to bring it back)
+git reset HEAD~2                : undos the last two commits
+git branch                      : shows current working branch. * annotates current branch
+git branch myfeature            : creates branch myfeature
+git checkout myfeature          : switches to myfeature branch

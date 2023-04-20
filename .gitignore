@@ -5,3 +5,5 @@ logs
 
 # ignore all .exe files
 *.exe
+
+myfile.txt
