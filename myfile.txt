@@ -25,3 +25,7 @@ git branch myfeature            : creates branch myfeature
 git checkout myfeature          : switches to myfeature branch
     (changes made while on myfeature branch won't show on main branch, and viceversa)
 git checkout -b health.h        : creates and switches to health.h branch
+git merge health.h              : Fast-forwared merge of health.h into master
+    (fast-forward merge just moves the master point to the health.h branch,
+     because there we're no changes in the master branch at the time of the merge)
+git branch -d health.h          : deletes the health.h branch
