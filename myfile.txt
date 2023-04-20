@@ -42,5 +42,24 @@ git rebase master               : changes the base of the current branch, to the
      3. run rebase master within feature branch.
      4. goto master branch then merge feature branch, for a fastforward merge.
      5. commits will be logged all master commits followed by feature commits.
+git diff hashID hashID          : compares two commits
+    $ git diff ff8f8b3e3cc3eef53dffd250e5d7baccec8c4c28 06e818a78c48aa5d0e1d7ea85cd40a2e2edf40b6
+    diff --git a/f1.txt b/f1.txt
+    index a774443..6692562 100644
+    --- a/f1.txt
+    +++ b/f1.txt
+    @@ -1 +1 @@   (number of lines removed, number of lines added)
+    -void func(); (removed line)
+    +bool func(); (added line)
 
-     
+    $ git merge feature
+    Auto-merging f1.txt
+    CONFLICT (content): Merge conflict in f1.txt
+    Automatic merge failed; fix conflicts and then commit the result.
+
+        <<<<<<< HEAD
+        bool func();
+        =======
+        int func();
+        >>>>>>> feature     (remove the code that is the wrong code and save)
+
