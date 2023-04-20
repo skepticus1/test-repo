@@ -121,4 +121,7 @@ git push -f origin main (nuclear option. can make others and/or you lose work)
 
 git config --global core.editor "code --wait"
     (have git bash use vs code when editing comments on commits)
-    
+
+
+
+new line
