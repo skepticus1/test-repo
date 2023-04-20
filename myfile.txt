@@ -118,3 +118,7 @@ git push --delete origin feature ( will delete the feature branch from origin)
     main    39bb69d [origin/main] updated myfile.txt with nots on cloing, push, pull, fetch
 
 git push -f origin main (nuclear option. can make others and/or you lose work)
+
+git config --global core.editor "code --wait"
+    (have git bash use vs code when editing comments on commits)
+    
