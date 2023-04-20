@@ -74,3 +74,28 @@ git remote add origin https://github.com/skepticus1/test-repo.git
         at github.com))
 git branch -M main              : renames branch, so you can rename it from master to main
 git push -u origin main         : pushes the repo to the "origin" (which is just a name) the remote repo.
+    -u is upstream
+            $ git push -u origin main
+            Enumerating objects: 91, done.
+            Counting objects: 100% (91/91), done.
+            Delta compression using up to 16 threads
+            Compressing objects: 100% (80/80), done.
+            Writing objects: 100% (91/91), 8.78 KiB | 599.00 KiB/s, done.
+            Total 91 (delta 43), reused 0 (delta 0), pack-reused 0
+            remote: Resolving deltas: 100% (43/43), done.
+            To https://github.com/skepticus1/test-repo.git
+             * [new branch]      main -> main
+            branch 'main' set up to track 'origin/main'.
+git branch -vv                  : shows the branches and their remotes
+
+git clone https://github.com/skepticus1/test-repo.git
+git clone git@github.com:skepticus1/test-repo.git
+    (clones the repo to folder it's ran from, must have keys setup with your account. ssh key and personal access
+    token, respectively)
+
+git push origin main (origin is the remote name it was cloned from)
+    (may ask for PAT, toke made from the github site. paste it in. i didn't need to enter my.)
+git config --global credential.helper cache
+    (caches the PAT, seems this was already done. Not sure how to verify.)
+
+git fetch (checks for updates with remote repo)
