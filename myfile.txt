@@ -25,7 +25,11 @@ git branch myfeature            : creates branch myfeature
 git checkout myfeature          : switches to myfeature branch
     (changes made while on myfeature branch won't show on main branch, and viceversa)
 git checkout -b health.h        : creates and switches to health.h branch
-git merge health.h              : Fast-forwared merge of health.h into master
+git merge health.h              : merge of health.h into master
     (fast-forward merge just moves the master point to the health.h branch,
-     because there we're no changes in the master branch at the time of the merge)
+     because there we're no changes in the master branch at the time of the merge
+     recursive merge and ort merge exist too. three way merge. merge of tip of two branches
+     and the commit the merge was from.)
 git branch -d health.h          : deletes the health.h branch
+git clear                       : clears the cli
+git branch -D myfeature         : force deletes a branch, even if it has changes that aren't merged into master
