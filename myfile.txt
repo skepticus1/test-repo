@@ -35,4 +35,12 @@ git clear                       : clears the cli
 git branch -D myfeature         : force deletes a branch, even if it has changes that aren't merged into master
 git log --pretty=oneline        : shows the commits one per line. easy to read.
 git rebase master               : changes the base of the current branch, to the latest master commit.
-    (this is done to have a linear/clean commit log)
+    (this is done to have a linear/clean commit log. section 18, rebasing explains this well.
+     1. branch off master with new branch "feature".
+        a. feature has n commits)
+     2. master has n commits after "feature" branch was created.
+     3. run rebase master within feature branch.
+     4. goto master branch then merge feature branch, for a fastforward merge.
+     5. commits will be logged all master commits followed by feature commits.
+
+     
