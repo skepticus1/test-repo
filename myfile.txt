@@ -42,6 +42,9 @@ git rebase master               : changes the base of the current branch, to the
      3. run rebase master within feature branch.
      4. goto master branch then merge feature branch, for a fastforward merge.
      5. commits will be logged all master commits followed by feature commits.
+#
+# merge conflicts
+#
 git diff hashID hashID          : compares two commits
     $ git diff ff8f8b3e3cc3eef53dffd250e5d7baccec8c4c28 06e818a78c48aa5d0e1d7ea85cd40a2e2edf40b6
     diff --git a/f1.txt b/f1.txt
@@ -61,5 +64,13 @@ git diff hashID hashID          : compares two commits
         bool func();
         =======
         int func();
-        >>>>>>> feature     (remove the code that is the wrong code and save)
+        >>>>>>> feature     
+        (correct the code, either remove bad/old code, or write new code and save)
+        (stage and commit the change)
 
+git remote
+git remote add origin https://github.com/skepticus1/test-repo.git
+    (adds origin (origin is just a name, can be anything. with the url of the repo directory i made
+        at github.com))
+git branch -M main              : renames branch, so you can rename it from master to main
+git push -u origin main         : pushes the repo to the "origin" (which is just a name) the remote repo.
