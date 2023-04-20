@@ -23,4 +23,5 @@ git reset HEAD~2                : undos the last two commits
 git branch                      : shows current working branch. * annotates current branch
 git branch myfeature            : creates branch myfeature
 git checkout myfeature          : switches to myfeature branch
-    (changes made while on myfeature branch won't show on main branch)
+    (changes made while on myfeature branch won't show on main branch, and viceversa)
+git checkout -b health.h        : creates and switches to health.h branch
