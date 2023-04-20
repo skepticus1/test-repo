@@ -34,3 +34,5 @@ git branch -d health.h          : deletes the health.h branch
 git clear                       : clears the cli
 git branch -D myfeature         : force deletes a branch, even if it has changes that aren't merged into master
 git log --pretty=oneline        : shows the commits one per line. easy to read.
+git rebase master               : changes the base of the current branch, to the latest master commit.
+    (this is done to have a linear/clean commit log)
