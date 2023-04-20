@@ -98,4 +98,23 @@ git push origin main (origin is the remote name it was cloned from)
 git config --global credential.helper cache
     (caches the PAT, seems this was already done. Not sure how to verify.)
 
-git fetch (checks for updates with remote repo)
+git fetch (checks for updates with remote repo) updates remote tracking branch
+
+git push -u origin feature (pushes the branch "feature" to the remote "origin")
+                            (can do if "feature" branch isn't yet being tracked in origin)
+    $ git branch -vv
+    *   feature 39bb69d updated myfile.txt with nots on cloing, push, pull, fetch
+        main    39bb69d [origin/main] updated myfile.txt with nots on cloing, push, pull, fetch
+    (you can see main is being tracked [origin/main], but feature is not.)
+    $ git push -u origin feature
+    $ git branch -vv
+    *   feature 39bb69d [origin/feature] updated myfile.txt with nots on cloing, push, pull, fetch
+        main    39bb69d [origin/main] updated myfile.txt with nots on cloing, push, pull, fetch
+    (now it is.)
+
+git push --delete origin feature ( will delete the feature branch from origin)
+    $ git branch -vv
+    * feature 39bb69d [origin/feature: gone] updated myfile.txt with nots on cloing, push, pull, fetch
+    main    39bb69d [origin/main] updated myfile.txt with nots on cloing, push, pull, fetch
+
+git push -f origin main (nuclear option. can make others and/or you lose work)
