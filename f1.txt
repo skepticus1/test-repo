@@ -1,2 +1,6 @@
 /* added new comment */
 int func()
+
+interactive rebase
+2
+3
