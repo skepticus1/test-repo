@@ -123,3 +123,11 @@ git config --global core.editor "code --wait"
     (have git bash use vs code when editing comments on commits)
 
 git rebase -i 
+
+git stash : takes changes from working directory and adds them to the stash.
+            adds to the top of the stack
+            changes won't be seen anymore in the working directory.
+            same as "git stash push", push doesn't push to an online repo.
+git stash show : shows the latest change to the stack. 
+git stash pop : removes the lastest change and puts it back in the working directory
+git stash drop : deletes the latest change from the stash.
